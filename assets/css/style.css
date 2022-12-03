@@ -206,6 +206,7 @@ article.active {
   text-transform: capitalize;
 }
 
+
 .h2 { font-size: var(--fs-1); }
 
 .h3 { font-size: var(--fs-2); }
@@ -483,7 +484,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
 
 
 /**
