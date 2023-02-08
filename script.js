@@ -1,0 +1,6 @@
+var shayari = "Roses are red,<br>Violets are blue,<br>I have a crush on you,<br>And my love for you will always be true.<br>Happy Rose Day!";
+var essay= "Dear Pari👸🏻,<br> Happy Rose Day! On this special occasion, I wanted to take a moment to express my feelings towards you.<br> You have captured my heart and imagination with your warmth, kindness, and sparkling personality.<br> Your smile brightens my day and your laughter fills my heart with joy.<br> Every time I see a rose, I am reminded of your beauty and grace.<br> Like a rose, you are delicate and precious, yet strong and resilient.<br> I admire your courage and determination in the face of challenges, and your unwavering commitment to your dreams.<br> I am grateful for the moments we have shared and the memories we have made together.<br> You have brought so much joy and happiness into my life, and I cannot imagine a day without you in it.<br> So, on this Rose Day, I want you to know that my love for you is as deep and rich as the colors of a red rose.<br> I promise to cherish and protect you, to support and encourage you, and to stand by your side through thick and thin.<br> With all my heart, <br>Saksham"
+
+
+document.getElementById("shayari").innerHTML = shayari;
+document.getElementById("essay").innerHTML = essay;
