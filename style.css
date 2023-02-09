@@ -15,7 +15,7 @@ body{
 }
 .container{  
   position: absolute;
-  top: 120px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -287,7 +287,7 @@ body {
     width:100%;
     text-align:center;
     color:rgb(0, 0, 0);
-    font-family:cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:bold;
 }
 .essay{
