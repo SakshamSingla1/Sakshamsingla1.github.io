@@ -1,6 +1,86 @@
+var radius = 240; // how big of the radius
+var autoRotate = true; // auto rotate or not
+var rotateSpeed = -60; // unit: seconds/360 degrees
+var imgWidth = 120; // width of images (unit: px)
+var imgHeight = 170; // height of images (unit: px)
 
-var shayari = "Soft and cuddly, just like you,<br>My teddy bear, I gift to you.<br>A symbol of love, from me to you,<br>A constant reminder, my love is true";
-var essay= "Teddy Day is celebrated every year on February 10th and is a part of the Valentine's Week.<br> It is a day dedicated to expressing love and affection towards your significant other,<br> and what better way to do that than with a cute and cuddly teddy bear!<br>Teddy bears have been a symbol of love and comfort since time immemorial.<br> They bring joy and happiness and bring a smile to people's faces.<br> They are not just for children, but for people of all ages.<br> On Teddy Day, couples exchange teddy bears as a symbol of their love and affection for each other.<br>The idea behind this day is to make your significant other feel special and loved.<br> A teddy bear is a perfect gift to show your love because it is soft, cuddly and represents the love and comfort that you provide to each other.<br> It also serves as a constant reminder of your love, even when you are apart.<br> Teddy Day is a day to show your appreciation for your partner and to remind them how much they mean to you. <br>It is a day to spend quality time with each other, to cuddle up with your teddy bear and to express your love in a cute and cuddly way.<br>In conclusion, Teddy Day is a day to celebrate the love and affection between two people.<br> It is a day to express your love with a simple yet meaningful gift, and to make your significant other feel loved and appreciated.<br> So, go ahead and surprise your girlfriend with a teddy bear, and make this Teddy Day a day to remember!";
+// Link of background music - set 'null' if you dont want to play background music
+var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
+var bgMusicControls = true; // Show UI music control
 
-document.getElementById("shayari").innerHTML = shayari;
-document.getElementById("essay").innerHTML = essay;
+
+
+// ===================== start =======================
+// animation start after 1000 miliseconds
+setTimeout(init, 1000);
+
+var odrag = document.getElementById('drag-container');
+var ospin = document.getElementById('spin-container');
+var aImg = ospin.getElementsByTagName('img');
+var aVid = ospin.getElementsByTagName('video');
+var aEle = [...aImg, ...aVid]; // combine 2 arrays
+
+// Size of images
+ospin.style.width = imgWidth + "px";
+ospin.style.height = imgHeight + "px";
+
+// Size of ground - depend on radius
+var ground = document.getElementById('ground');
+ground.style.width = radius * 3 + "px";
+ground.style.height = radius * 3 + "px";
+
+function init(delayTime) {
+  for (var i = 0; i < aEle.length; i++) {
+    aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
+    aEle[i].style.transition = "transform 1s";
+    aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
+  }
+}
+
+function applyTranform(obj) {
+  // Constrain the angle of camera (between 0 and 180)
+// setup events
+document.onpointerdown = function (e) {
+  clearInterval(odrag.timer);
+  e = e || window.event;
+  var sX = e.clientX,
+      sY = e.clientY;
+
+  this.onpointermove = function (e) {
+    e = e || window.event;
+    var nX = e.clientX,
+        nY = e.clientY;
+    desX = nX - sX;
+    desY = nY - sY;
+    tX += desX * 0.1;
+    tY += desY * 0.1;
+    applyTranform(odrag);
+    sX = nX;
+    sY = nY;
+  };
+
+  this.onpointerup = function (e) {
+    odrag.timer = setInterval(function () {
+      desX *= 0.95;
+      desY *= 0.95;
+      tX += desX * 0.1;
+      tY += desY * 0.1;
+      applyTranform(odrag);
+      playSpin(false);
+      if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+        clearInterval(odrag.timer);
+        playSpin(true);
+      }
+    }, 17);
+    this.onpointermove = this.onpointerup = null;
+  };
+
+  return false;
+};
+
+document.onmousewheel = function(e) {
+  e = e || window.event;
+  var d = e.wheelDelta / 20 || -e.detail;
+  radius += d;
+  init(1);
+};
