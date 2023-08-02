@@ -339,7 +339,12 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline" data-image-src="./assets/images/Screenshot 2022-09-25 at 8.11.14 PM.png" data-icon-click="true"></ion-icon>
                   </div>
-                  <img src="./assets/images/Screenshot 2022-09-25 at 8.11.14 PM.png" alt="finance" loading="lazy">
+                  <div id="image-description-container"">
+                    <button onclick="closeProjectDetails()">Close</button>
+                    <img id="image-preview" src="./assets/images/Screenshot 2022-09-25 at 8.11.14 PM.png" alt="Image Preview" loading="lazy">
+                    <p id="image-description">Image Description</p>
+                  </div>
+                   
                 </figure>
                 <h3 class="project-title">Appofiesta</h3>
                 <p class="project-category">Flutter App Hackathon</p>
@@ -441,18 +446,20 @@
                 <p class="project-category">Webinar</p>
               </a>
             </li>
-            <li class="project-item  active">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Screenshot 2023-07-18 at 7.19.37 PM.png" alt="brawlhalla" loading="lazy">
-                </figure>
-                <h3 class="project-title">Rajasthan IT Day</h3>
-                <p class="project-category">Hackathon</p>
-              </a>
-            </li>
+            <!-- In the main page where you have the list of projects -->
+<li class="project-item active">
+  <a href="javascript:void(0);" onclick="openProjectDetails()">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/Screenshot 2023-07-18 at 7.19.37 PM.png" alt="brawlhalla" loading="lazy">
+    </figure>
+    <h3 class="project-title">Rajasthan IT Day</h3>
+    <p class="project-category">Hackathon</p>
+  </a>
+</li>
+
           </ul>
         </section>
       </article>
@@ -489,6 +496,32 @@
   overlay.addEventListener('click', () => {
     modalContainer.style.display = 'none';
   });
+  // Function to show the image and description when the button is clicked
+  function openProjectDetails() {
+    const imageBtns = document.querySelectorAll('.project-img-btn');
+    const imagePreview = document.getElementById('image-preview');
+    const imageDescription = document.getElementById('image-description');
+    const imageDescriptionContainer = document.getElementById('image-description-container');
+
+    imageBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const imageSrc = btn.getAttribute('data-image-src');
+        const imageAlt = btn.parentElement.nextElementSibling.textContent;
+
+        imagePreview.src = imageSrc;
+        imagePreview.alt = imageAlt;
+        imageDescription.textContent = imageAlt;
+        imageDescriptionContainer.style.display = 'block';
+      });
+    });
+  }
+
+  // Function to close the image and description container
+  function closeProjectDetails() {
+    const imageDescriptionContainer = document.getElementById('image-description-container');
+    imageDescriptionContainer.style.display = 'none';
+  }
+  
 </script>
 
 </body>
