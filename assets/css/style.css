@@ -469,12 +469,14 @@ main {
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
+  border: 1px solid var(--orange-yellow-crayola);
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
 
 .navbar-list {
   display: flex;
+
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
