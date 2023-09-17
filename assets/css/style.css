@@ -813,11 +813,11 @@ main {
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
+  background: var(--orange-yellow-crayola);
   top: -25px;
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: var(--jet);
 }
 
 .timeline-item::after {
