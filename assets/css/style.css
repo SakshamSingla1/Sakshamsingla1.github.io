@@ -1908,8 +1908,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: var(--bg-gradient-onyx);
   color: var(--orange-yellow-crayola);
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+  font-size:  var(--fs-6);
+  font-weight: 500;
   border-radius: 4px;
 }
 
