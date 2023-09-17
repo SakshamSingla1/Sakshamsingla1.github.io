@@ -64,6 +64,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola1: hsl(45, 100%, 90%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -185,6 +186,7 @@ article {
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
+  border: 1px solid var(--orange-yellow-crayola);
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -334,7 +336,9 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  border: 2px solid var(--orange-yellow-crayola); /* Add a border with the desired color */
 }
+
 
 .info-content .name {
   color: var(--white-2);
@@ -352,6 +356,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+  border: 1px solid var(--orange-yellow-crayola);
 }
 
 .info_more-btn {
@@ -483,7 +488,7 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--orange-yellow-crayola1); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
@@ -527,6 +532,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
+  border: 1px solid var(--orange-yellow-crayola);
   box-shadow: var(--shadow-2);
   z-index: 1;
 }
@@ -836,7 +842,8 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.skills-list { padding: 20px;
+  border: 1px solid var(--orange-yellow-crayola); }
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -1168,6 +1175,7 @@ main {
 
 textarea.form-input {
   min-height: 100px;
+  border: 1px solid var(--orange-yellow-crayola);
   height: 120px;
   max-height: 200px;
   resize: vertical;
@@ -1181,6 +1189,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn {
   position: relative;
   width: 100%;
+  border: 1px solid var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   color: var(--orange-yellow-crayola);
   display: flex;
@@ -1893,10 +1902,30 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--orange-yellow-crayola);
   text-decoration: none;
   font-size: 16px;
+  font-weight: 600;
   border-radius: 4px;
 }
 
 .cv-button a:hover {
   background: var(--orange-yellow-crayola);
   color: var(--bg-gradient-onyx); /* Add a new color for text on hover */
+}
+.social-link ion-icon {
+  width: 25px;
+  height: 25px;
+  color: var(--orange-yellow-crayola);
+  background: var(--smoky-black);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  transition: .4s;
+  border-radius: 20%;
+  border: 1px solid var(--orange-yellow-crayola);
+  z-index: 1;
+}
+
+.social-link ion-icon:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
 }
