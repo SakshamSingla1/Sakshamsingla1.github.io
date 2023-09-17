@@ -1138,7 +1138,7 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
+  filter: color(1) invert(1);
 }
 
 .contact-form { margin-bottom: 10px; }
@@ -1880,12 +1880,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-.download-cv-button {
+.cv-button {
   margin-top: 20px;
   text-align: center;
 }
 
-.download-cv-button a {
+.cv-button a {
   display: inline-block;
   padding: 10px 20px;
   border: 1px solid var(--orange-yellow-crayola);
@@ -1896,7 +1896,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 4px;
 }
 
-.download-cv-button a:hover {
+.cv-button a:hover {
   background: var(--orange-yellow-crayola);
   color: var(--bg-gradient-onyx); /* Add a new color for text on hover */
 }
