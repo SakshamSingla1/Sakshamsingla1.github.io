@@ -1169,6 +1169,15 @@ main {
   border-radius: 14px;
   outline: none;
 }
+.form-input1 {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  outline: none;
+}
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
@@ -1182,6 +1191,15 @@ textarea.form-input {
   resize: vertical;
   margin-bottom: 25px;
 }
+textarea.form-input1 {
+  min-height: 10px;
+  border: 1px solid var(--orange-yellow-crayola);
+  height: 50px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
 
 textarea.form-input::-webkit-resizer { display: none; }
 
