@@ -1,5 +1,27 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
 
 :root {
+
+  /**
+   * colors
+   */
+
+  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -100,7 +122,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing:content-box;
+  box-sizing: border-box;
 }
 
 a { text-decoration: none; }
@@ -205,7 +227,6 @@ article.active {
   color: var(--white-2);
   text-transform: capitalize;
 }
-
 
 .h2 { font-size: var(--fs-1); }
 
@@ -312,7 +333,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 90px;
+  border-radius: 20px;
 }
 
 .info-content .name {
@@ -339,7 +360,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--range-yellow-crayola);
+  color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -484,6 +505,7 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+
 
 
 /**
@@ -850,7 +872,7 @@ main {
 
 
 /*-----------------------------------*\
-  #certificates
+  #PORTFOLIO
 \*-----------------------------------*/
 
 .filter-list { display: none; }
@@ -1222,7 +1244,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #certificates, BLOG 
+   * #PORTFOLIO, BLOG 
    */
 
   .project-img,
@@ -1315,9 +1337,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 15px; }
+  .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; border-radius: 15px; }
+  .avatar-box img { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1481,7 +1503,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #certificates, BLOG
+   * #PORTFOLIO, BLOG
    */
 
   .project-img, .blog-banner-box { border-radius: 16px; }
@@ -1574,7 +1596,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * certificates
+   * PORTFOLIO
    */
 
   .article-title { padding-bottom: 20px; }
@@ -1600,7 +1622,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* certificates and blog grid */
+  /* portfolio and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
@@ -1719,7 +1741,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * certificates
+   * PORTFOLIO
    */
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
@@ -1857,4 +1879,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+.download-cv-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.download-cv-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--orange-yellow-crayola);
+  background-color: var(--bg-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.download-cv-button a:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--bg-gradient-onyx); /* Add a new color for text on hover */
 }
