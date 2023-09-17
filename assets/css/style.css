@@ -169,7 +169,7 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  border: 1px solid var(--orange-yellow-crayola);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
