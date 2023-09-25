@@ -133,6 +133,49 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
+  // Function to toggle between dark and light mode
+  function toggle_light_mode() {
+    const body = document.body;
+    const darkToggler = document.getElementById("dark_toggler");
+
+    if (darkToggler.checked) {
+      // Switch to dark mode
+      body.classList.add("dark-mode");
+      setDarkModeColors();
+    } else {
+      // Switch to light mode
+      body.classList.remove("dark-mode");
+      setLightModeColors();
+    }
+  }
+
+  // Function to set colors for dark mode
+  function setDarkModeColors() {
+    const body = document.body;
+    const links = document.querySelectorAll(".contact-link, .navbar-link, .social-link");
+
+    body.style.backgroundColor = "var(--onyx)";
+    body.style.color = "var(--white-1)";
+
+    // Change link colors
+    for (const link of links) {
+      link.style.color = "var(--orange-yellow-crayola)";
+    }
+  }
+
+  // Function to set colors for light mode
+  function setLightModeColors() {
+    const body = document.body;
+    const links = document.querySelectorAll(".contact-link, .navbar-link, .social-link");
+
+    body.style.backgroundColor = "var(--white-1)";
+    body.style.color = "var(--onyx)";
+
+    // Change link colors
+    for (const link of links) {
+      link.style.color = "var(--orange-yellow-crayola)";
+    }
+  }
 
 
 
