@@ -174,7 +174,7 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--orange-yellow-crayola);
+  border: 5px solid var(--orange-yellow-crayola);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -515,7 +515,7 @@ main {
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
-  border: 1px solid var(--orange-yellow-crayola);
+  border: 5px solid var(--orange-yellow-crayola);
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
