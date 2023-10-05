@@ -202,6 +202,7 @@ article {
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola)
 }
 
 .icon-box::before {
@@ -341,7 +342,8 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
-  border: 2px solid var(--orange-yellow-crayola); /* Add a border with the desired color */
+  border: 2px solid var(--orange-yellow-crayola);
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola) /* Add a border with the desired color */
 }
 
 
@@ -362,6 +364,7 @@ main {
   padding: 3px 6px;
   border-radius: 8px;
   border: 1px solid var(--orange-yellow-crayola);
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola)
 }
 
 .info_more-btn {
@@ -374,7 +377,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 10px;
   border: 1px solid var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-2);
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola);
   transition: var(--transition-1);
   z-index: 1;
 }
@@ -475,7 +478,7 @@ main {
   border-radius: 50px;
   outline: none;
   transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px gray;
+  box-shadow: 0px 2px 5px 1px var(--orange-yellow-crayola);
 }
 .dark_toggler:before {
   content: "";
@@ -487,7 +490,7 @@ main {
   background-color: navy;
   border-radius: 50px;
   transition: all 0.9s;
-  background-color: #f7ca33;
+  background-color: var(--orange-yellow-crayola);
 }
 .navbar-brand {
   color: var(--orange-yellow-crayola);
@@ -498,7 +501,7 @@ main {
 .dark_toggler:checked {
   background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
   transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px gray
+  box-shadow: 0px 2px 5px 1px var(--orange-yellow-crayola)
 }
 
 .dark_toggler:checked:before {
@@ -584,6 +587,7 @@ main {
   border: 1px solid var(--orange-yellow-crayola);
   box-shadow: var(--shadow-2);
   z-index: 1;
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola)
 }
 
 .service-item::before {
@@ -864,6 +868,7 @@ main {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola)
 }
 
 .timeline-item::after {
@@ -875,7 +880,7 @@ main {
   width: 6px;
   background: var(--text-gradient-yellow);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0px 3px 4px var(--jet);
 }
 
 .timeline-text {
@@ -892,7 +897,8 @@ main {
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px;
-  border: 1px solid var(--orange-yellow-crayola); }
+  border: 1px solid var(--orange-yellow-crayola);
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola) }
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -1016,6 +1022,7 @@ main {
   border-radius: 10%;
   overflow: hidden;
   margin-bottom: 15px;
+  box-shadow: 0px 2px 9px 3px var(--orange-yellow-crayola)
 }
 
 .project-img::before {
@@ -1186,6 +1193,7 @@ main {
   margin-bottom: 30px;
   border: 1px solid var(--jet);
   overflow: hidden;
+  box-shadow: 0px 2px 9px 4px var(--orange-yellow-crayola)
 }
 
 .mapbox figure { height: 100%; }
@@ -1216,6 +1224,7 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   outline: none;
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola)
 }
 .form-input1 {
   color: var(--white-2);
@@ -1270,6 +1279,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  box-shadow: 0px 2px 9px 4px var(--orange-yellow-crayola)
 }
 
 .form-btn::before {
@@ -1981,6 +1991,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size:  var(--fs-6);
   font-weight: 500;
   border-radius: 4px;
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola);
 }
 
 .cv-button a:hover {
@@ -2014,6 +2025,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 20%;
   border: 1px solid var(--orange-yellow-crayola);
   z-index: 1;
+  box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola);
 }
 
 .social-link ion-icon:hover {
