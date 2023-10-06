@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2023 @saksham
  */
 
 
@@ -194,7 +194,7 @@ article {
   border: 1px solid var(--orange-yellow-crayola);
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1393,7 +1393,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .icon-box {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
+    border-radius: 50%;
     font-size: 18px;
   }
 
@@ -1423,7 +1423,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 50%; }
 
   .avatar-box img { width: 120px; }
 
