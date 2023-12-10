@@ -342,7 +342,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
-  border: 2px solid var(--orange-yellow-crayola);
+  border: 1px solid var(--orange-yellow-crayola);
   box-shadow: 0px 2px 9px 2px var(--orange-yellow-crayola) /* Add a border with the desired color */
 }
 
