@@ -29,10 +29,10 @@
 
   --bg-gradient-onyx: linear-gradient(to bottom right, #283e51, #0a2340);
   --bg-gradient-jet: linear-gradient(to bottom right, #0a1d2c, #000000), #0a1d2c;
-  --bg-gradient-yellow-1: linear-gradient(to bottom right, #4a90a4, #ffffff00);
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, #76D1FF, #ffffff00);
   --bg-gradient-yellow-2: linear-gradient(135deg, #4a90a400, #ffffff00), #0a1d2c;
   --border-gradient-onyx: linear-gradient(to bottom right, #000000, #00000000);
-  --text-gradient-yellow: linear-gradient(to right, #4a90a4, #366e7e);
+  --text-gradient-yellow: linear-gradient(to right, #4a90a4, #76D1FF);
 
   /* solid */
 
@@ -43,12 +43,12 @@
 --smoky-black: #000000;
 --white-1: #ffffff;
 --white-2: #f5f5f5;
---orange-yellow-crayola: #4a90a4;
---orange-yellow-crayola1: #74b3c7;
+--orange-yellow-crayola: #76D1FF;
+--orange-yellow-crayola1: #76D1FF;
 --vegas-gold: #c4d4e6;
 --light-gray: #d9d9d9;
 --light-gray-70: #b3b3b3;
---bittersweet-shimmer: #366e7e;
+--bittersweet-shimmer: #76D1FF;
 
   /**
    * typography
