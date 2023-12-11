@@ -27,52 +27,28 @@
 
   /* gradient */
 
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
-  );
+  --bg-gradient-onyx: linear-gradient(to bottom right, #283e51, #0a2340);
+  --bg-gradient-jet: linear-gradient(to bottom right, #0a1d2c, #000000), #0a1d2c;
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, #4a90a4, #ffffff00);
+  --bg-gradient-yellow-2: linear-gradient(135deg, #4a90a400, #ffffff00), #0a1d2c;
+  --border-gradient-onyx: linear-gradient(to bottom right, #000000, #00000000);
+  --text-gradient-yellow: linear-gradient(to right, #4a90a4, #366e7e);
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --orange-yellow-crayola1: hsl(45, 100%, 90%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --jet: #0a1d2c;
+--onyx: #283e51;
+--eerie-black-1: #0a2340;
+--eerie-black-2: #09172b;
+--smoky-black: #000000;
+--white-1: #ffffff;
+--white-2: #f5f5f5;
+--orange-yellow-crayola: #4a90a4;
+--orange-yellow-crayola1: #74b3c7;
+--vegas-gold: #c4d4e6;
+--light-gray: #d9d9d9;
+--light-gray-70: #b3b3b3;
+--bittersweet-shimmer: #366e7e;
 
   /**
    * typography
